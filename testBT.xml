@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KichBanTestP3" verbose="1">
+    <test thread-count="5" name="ChromeTest">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="appURL" value="https://rise.fairsketch.com" />
+        <classes >
+            <class name="BaiTap.TestCases.TC01_AddTask" />
+            <class name="BaiTap.TestCases.TC02_AddMultiTask" />
+            <class name="BaiTap.TestCases.TC03_AddProjectTime" />
+            <class name="BaiTap.TestCases.TC04_AddEvent" />
+            <class name="BaiTap.TestCases.TC05_AddNote" />
+            <class name="BaiTap.TestCases.TC06_AddTodo" />
+            <class name="BaiTap.TestCases.TC07_AddTicket" />
+        </classes>
+    </test>
+</suite>
